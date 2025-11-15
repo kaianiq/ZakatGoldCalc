@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarStyle">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zakat Gold Calculator"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <!-- Scrollable Content -->
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Removed old yellow TextView title since it's now in Toolbar -->
+
+    <!-- Weight input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter weight of gold (grams)"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="e.g. 120" />
+
+    <!-- Gold type -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select type of gold"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbKeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep" />
+
+        <RadioButton
+            android:id="@+id/rbWear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wear"
+            android:layout_marginStart="20dp" />
+    </RadioGroup>
+
+    <!-- Gold price -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter current gold price (RM/gram)"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etGoldPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="e.g. 520" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Zakat"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F4B400"
+        android:textColor="#FFFFFF" />
+
+    <!-- Output Section -->
+    <TextView
+        android:id="@+id/tvTotalValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total gold value: RM0.00"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPayableWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zakat payable weight: 0 grams"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvZakatAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zakat amount: RM0.00"
+        android:textStyle="bold" />
+
+    <!-- Clear Button -->
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Fields"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#BDBDBD"
+        android:textColor="#000000" />
+
+</LinearLayout>
+</ScrollView>
+
+    </LinearLayout>

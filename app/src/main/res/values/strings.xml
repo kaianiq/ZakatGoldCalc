@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ZakatGoldCalc</string>
+    <string name="copyright">Copyright &#169; 2025 Firdaus</string>
+    <string name="about_text">This is a calculator that perform zakat gold calculation</string>
+    <string name="website_url">https://github.com/yourname/ZakatGoldCalc</string>
+</resources>

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CBECFD"
     tools:context=".AboutActivity">
 
+
+
+
+
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dip"
         android:src="@mipmap/ic_launcher" />
@@ -19,11 +23,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
+        android:layout_below="@id/imageView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dip"
         android:text="@string/app_name"
-        android:textSize="24sp" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView2"
@@ -31,7 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:layout_centerInParent="true"
-        android:text="@string/copyright" />
+        android:text="@string/copyright"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -40,20 +46,74 @@
         android:layout_below="@id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dip"
-        android:layout_marginTop="32dip"
+        android:layout_marginTop="29dp"
         android:layout_marginRight="16dip"
-        android:text="@string/about_text" />
+        android:text="@string/about_text"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/websiteLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView3"
+        android:layout_below="@id/detail4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="@string/website_url"
         android:autoLink="web"
+        android:linksClickable="true"
+        android:text="https://github.com/kaianiq/ZakatGoldCalc.git"
         android:textColor="@android:color/holo_blue_dark"
-        android:linksClickable="true" />
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="7dip"
+        android:backgroundTint="@color/button_yellow"
+        android:text="Back"
+        android:textColorLink="@color/gold" />
+
+    <TextView
+        android:id="@+id/detail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Name: Khairul Aniq bin Mustakim"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Student ID: 2023858808"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detail3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Group: RCDCS2405B"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detail4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Programme Code: CDCS240"
+        android:textSize="16sp" />
+
+
 
 </RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+    <color name="gold">#FFD700</color>
+    <color name="light_blue">#2A3D4F</color>
+    <color name="button_yellow">#F4B400</color>
+    <color name="background_light">#121212</color>
+    <color name="text_dark">#FFFFFF</color>
+</resources>

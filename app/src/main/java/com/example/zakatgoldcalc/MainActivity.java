@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else if (id == R.id.action_share){
-            String url = "https://github.com/yourname/ZakatGoldCalc"; // your app website
+            String url = "https://github.com/kaianiq/ZakatGoldCalc.git"; // your app website
 
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
